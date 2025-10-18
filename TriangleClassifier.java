@@ -29,7 +29,7 @@ public class TriangleClassifier {
         }
     }
 
-    // Triangle inequality + positive sides
+    
     private static boolean isValidTriangle(double a, double b, double c) {
         return a > 0 && b > 0 && c > 0 &&
                (a + b > c) && (a + c > b) && (b + c > a);
@@ -50,7 +50,7 @@ public class TriangleClassifier {
     }
 
     private static String classifyByAngles(double a, double b, double c) {
-        // Sort so the largest side is last, required for Pythagorean comparison
+        
         double[] sides = new double[] { a, b, c };
         Arrays.sort(sides);
         double x = sides[0], y = sides[1], z = sides[2]; // z is largest
